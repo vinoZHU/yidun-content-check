@@ -27,7 +27,7 @@ credentials_for_provider: #添加 credentials_for_provider 字段
     required: true
     label:
       en_US: Yidun SecretKey
-      zh_Hans: 易盾内容安全检测调用SecretKey
+      zh_Hans: 易盾内容安全检测SecretKey
     placeholder:
       en_US: Please input your YiduncontentSecurity SecretKey
       zh_Hans: 请输入你的易盾内容安全检测SecretKey
