@@ -62,7 +62,8 @@ credentials_for_provider: #添加 credentials_for_provider 字段
       zh_Hans: 从易盾官网获取您的图片BusinessId
     url: https://dun.163.com/product/text-detection
 tools:
-  - tools/yidun-content-security.yaml
+  - tools/yidun-text-security.yaml
+  - tools/yidun-image-security.yaml
 extra:
   python:
     source: provider/yidun-content-security.py

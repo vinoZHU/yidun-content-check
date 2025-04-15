@@ -16,32 +16,12 @@ class YidunContentSecurityTool(Tool):
         params = {
             "secretId": self.runtime.credentials["yidun_secret_id"],
             "secretKey": self.runtime.credentials["yidun_secret_key"],
-            "textBusinessId": self.runtime.credentials["yidun_text_business_id"],
             "imageBusinessId": self.runtime.credentials["yidun_image_business_id"],
-            "textContent": tool_parameters["text_content"],
             "imageUrl": tool_parameters["image_url"],
 
         }
         time_stamp = str(int(time.time()))  # 时间戳获取
         ret = {}
-        if (params["textBusinessId"] is not None and params["textBusinessId"] != ""
-            and params["textContent"] is not None and params["textContent"] != ""):
-            text_api = TextCheckAPIDemo(params["secretId"], params["secretKey"], params["textBusinessId"])
-            text_check_param = {
-                "dataId": "dify-yidun-text-check-" + time_stamp,
-                "content": params["textContent"]
-            }
-            text_ret = text_api.check(text_check_param)
-            code: int = text_ret["code"]
-            if code == 200:
-                result: dict = text_ret["result"]
-                antispam: dict = result["antispam"]
-                label: int = antispam["label"]
-                suggestion: int = antispam["suggestion"]
-                ret["text_label"] = label
-                ret["text_suggestion"] = suggestion
-            else:
-                ret["text_result"] = text_ret
 
         if (params["imageBusinessId"] is not None and params["imageBusinessId"] != ""
             and params["imageUrl"] is not None and params["imageUrl"] != ""):
