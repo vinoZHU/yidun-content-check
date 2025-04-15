@@ -29,10 +29,10 @@ class YidunContentSecurityTool(Tool):
             # 私有请求参数
             images: list = []
             image_url = {
-                "name": "https://nos.netease.com/yidun/2-0-0-a6133509763d4d6eac881a58f1791976.jpg",
+                "name": params["imageUrl"],
                 "dataId": "dify-yidun-image-check-" + time_stamp,
                 "type": 1,
-                "data": "https://nos.netease.com/yidun/2-0-0-a6133509763d4d6eac881a58f1791976.jpg"
+                "data": params["imageUrl"]
             }
 
             images.append(image_url)
