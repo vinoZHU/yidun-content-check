@@ -41,16 +41,13 @@ class YidunContentSecurityTool(Tool):
                 "images": json.dumps(images)
             }
             image_ret = image_api.check(image_check_param)
+            ret["result"] = image_ret
             code: int = image_ret["code"]
             if code == 200:
                 result: dict = image_ret["result"][0]
                 antispam: dict = result["antispam"]
                 label: int = antispam["label"]
                 suggestion: int = antispam["suggestion"]
-                ret["image_label"] = label
-                ret["image_suggestion"] = suggestion
-            else:
-                ret["image_result"] = image_ret
-        yield self.create_json_message({
-            "check_result": ret
-        })
+                ret["label"] = label
+                ret["suggestion"] = suggestion
+        yield self.create_json_message(ret)

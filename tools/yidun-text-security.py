@@ -29,17 +29,14 @@ class YidunContentSecurityTool(Tool):
                 "content": params["textContent"]
             }
             text_ret = text_api.check(text_check_param)
+            ret["result"] = text_ret
             code: int = text_ret["code"]
             if code == 200:
                 result: dict = text_ret["result"]
                 antispam: dict = result["antispam"]
                 label: int = antispam["label"]
                 suggestion: int = antispam["suggestion"]
-                ret["text_label"] = label
-                ret["text_suggestion"] = suggestion
-            else:
-                ret["text_result"] = text_ret
+                ret["label"] = label
+                ret["suggestion"] = suggestion
 
-        yield self.create_json_message({
-            "check_result": ret
-        })
+        yield self.create_json_message(ret)
