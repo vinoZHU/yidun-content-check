@@ -12,7 +12,7 @@ description:
   ja_JP: 易盾内容安全检测
   zh_Hans: 易盾内容安全检测
   pt_BR: 易盾内容安全检测
-icon: icon.svg
+icon: yidun.svg
 resource:
   memory: 268435456
   permission:
