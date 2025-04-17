@@ -2,8 +2,8 @@ identity:
   author: yidun
   name: yidun-content-security
   label:
-    en_US: yidun-content-security
-    zh_Hans: yidun-content-security
+    en_US: yidun content security check
+    zh_Hans: 易盾内容安全检测
   description:
     en_US: 易盾内容安全检测
     zh_Hans: 易盾内容安全检测

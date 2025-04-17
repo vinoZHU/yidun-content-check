@@ -3,10 +3,10 @@ type: plugin
 author: yidun
 name: yidun-content-security
 label:
-  en_US: yidun-content-security
-  ja_JP: yidun-content-security
-  zh_Hans: yidun-content-security
-  pt_BR: yidun-content-security
+  en_US: yidun content security check
+  ja_JP: yidun content security check
+  zh_Hans: 易盾内容安全检测
+  pt_BR: yidun content security check
 description:
   en_US: 易盾内容安全检测
   ja_JP: 易盾内容安全检测
