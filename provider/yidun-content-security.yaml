@@ -7,7 +7,7 @@ identity:
   description:
     en_US: 易盾内容安全检测
     zh_Hans: 易盾内容安全检测
-  icon: yidun.svg
+  icon: yidun.png
 credentials_for_provider: #添加 credentials_for_provider 字段
   yidun_secret_id:
     type: secret-input
