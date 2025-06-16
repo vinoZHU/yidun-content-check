@@ -21,7 +21,7 @@ import json
 from gmssl import sm3, func
 
 
-class TextCheckAPIDemo(object):
+class TextCheckAPI(object):
     """文本在线检测接口示例代码"""
 
     API_URL = "http://as.dun.163.com/v5/text/check"
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     SECRET_ID = "9998afe690178130473846475b62ed97"  # 产品密钥ID，产品标识
     SECRET_KEY = "c7cc25d35d80643431b40b16417c43c0"  # 产品私有密钥，服务端生成签名信息使用，请严格保管，避免泄露
     BUSINESS_ID = "dd23d3ece7ed7c33db4125cfedc9bde2"  # 业务ID，易盾根据产品业务特点分配
-    api = TextCheckAPIDemo(SECRET_ID, SECRET_KEY, BUSINESS_ID)
+    api = TextCheckAPI(SECRET_ID, SECRET_KEY, BUSINESS_ID)
 
     params = {
         "dataId": "ebfcad1c-dba1-490c-b4de-e784c2691768",

@@ -21,7 +21,7 @@ import json
 from gmssl import sm3, func
 
 
-class ImageCheckAPIDemo(object):
+class ImageCheckAPI(object):
     """图片在线检测接口示例代码"""
 
     API_URL = "http://as.dun.163.com/v5/image/check"
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     SECRET_ID = "your_secret_id"  # 产品密钥ID，产品标识
     SECRET_KEY = "your_secret_key"  # 产品私有密钥，服务端生成签名信息使用，请严格保管，避免泄露
     BUSINESS_ID = "your_business_id"  # 业务ID，易盾根据产品业务特点分配
-    api = ImageCheckAPIDemo(SECRET_ID, SECRET_KEY, BUSINESS_ID)
+    api = ImageCheckAPI(SECRET_ID, SECRET_KEY, BUSINESS_ID)
 
     # 私有请求参数
     images: list = []

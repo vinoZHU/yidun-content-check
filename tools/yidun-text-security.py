@@ -7,8 +7,7 @@ import time
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
-from tools.image_check import ImageCheckAPIDemo
-from tools.text_check import TextCheckAPIDemo
+from tools.text_check import TextCheckAPI
 
 
 class YidunContentSecurityTool(Tool):
@@ -23,7 +22,7 @@ class YidunContentSecurityTool(Tool):
         ret = {}
         if (params["textBusinessId"] is not None and params["textBusinessId"] != ""
             and params["textContent"] is not None and params["textContent"] != ""):
-            text_api = TextCheckAPIDemo(params["secretId"], params["secretKey"], params["textBusinessId"])
+            text_api = TextCheckAPI(params["secretId"], params["secretKey"], params["textBusinessId"])
             text_check_param = {
                 "dataId": "dify-yidun-text-check-" + time_stamp,
                 "content": params["textContent"]

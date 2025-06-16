@@ -7,8 +7,7 @@ import time
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
-from tools.image_check import ImageCheckAPIDemo
-from tools.text_check import TextCheckAPIDemo
+from tools.image_check import ImageCheckAPI
 
 
 class YidunContentSecurityTool(Tool):
@@ -25,7 +24,7 @@ class YidunContentSecurityTool(Tool):
 
         if (params["imageBusinessId"] is not None and params["imageBusinessId"] != ""
             and params["imageUrl"] is not None and params["imageUrl"] != ""):
-            image_api = ImageCheckAPIDemo(params["secretId"], params["secretKey"], params["imageBusinessId"])
+            image_api = ImageCheckAPI(params["secretId"], params["secretKey"], params["imageBusinessId"])
             # 私有请求参数
             images: list = []
             image_url = {
