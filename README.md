@@ -1,4 +1,4 @@
-# Yidun-contento-security | 易盾内容检测组件 &#x20;
+# Yidun-content-security | 易盾内容检测组件 &#x20;
 
 **Author:** yidun\
 **Type:** Tool
@@ -31,11 +31,11 @@ The Yidun content detection tool can be installed by referencing plugins from th
 
 ### 从github仓库引用安装插件 ｜Install the plugin by referencing it from the GitHub repository.
 
-![](./_assets/install1.png)
+![](https://yidunfe.nosdn.127.net/dify-yidun-content-security-assets/install1.png)
 
-![](./_assets/install2.png)
+![](https://yidunfe.nosdn.127.net/dify-yidun-content-security-assets/install2.png)
 
-![](./_assets/install3.png)
+![](https://yidunfe.nosdn.127.net/dify-yidun-content-security-assets/install3.png)
 
 ### 设置授权密钥 ｜Set the authorization key
 
@@ -43,7 +43,7 @@ To obtain the invocation key, please visit <https://dun.163.com/> and contact 
 
 需访问<https://dun.163.com/> 联系商务获取调用密钥。
 
-![](./_assets/authorization.png)
+![](https://yidunfe.nosdn.127.net/dify-yidun-content-security-assets/authorization.png)
 
 ### 创建工作流 ｜Create a Dify workflow.
 
@@ -57,11 +57,11 @@ Select to add a tool and find Yidun Content Security Detection. Please note that
 
 选择添加工具，找到易盾内容安全检测，请注意若输入为文本选择「易盾内容安全文本检测」，若输入为图片选择「易盾内容安全图片检测」
 
-![](./_assets/create-workflow.png)
+![](https://yidunfe.nosdn.127.net/dify-yidun-content-security-assets/create-workflow.png)
 
 ### 运行成功 ｜Run successfully.
 
-![](./_assets/run-workflow.png)
+![](https://yidunfe.nosdn.127.net/dify-yidun-content-security-assets/run-workflow.png)
 
 
 
