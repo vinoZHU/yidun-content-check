@@ -39,9 +39,9 @@ The Yidun content detection tool can be installed by referencing plugins from th
 
 ### 设置授权密钥 ｜Set the authorization key
 
-To obtain the invocation key, please visit <https://dun.163.com/> and contact our business team.
+For Yidun acquisition and authentication usage, please visit <https://support.dun.163.com/documents/359794278577393664?docId=1096156073202741248> to view the acquisition plan.
 
-需访问<https://dun.163.com/> 联系商务获取调用密钥。
+易盾获取，鉴权使用，请访问https\://support.dun.163.com/documents/359794278577393664?docId=1096156073202741248查看获取方案
 
 ![](https://yidunfe.nosdn.127.net/dify-yidun-content-security-assets/authorization.png)
 

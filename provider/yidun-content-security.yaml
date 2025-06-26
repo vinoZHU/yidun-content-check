@@ -16,12 +16,12 @@ credentials_for_provider: #添加 credentials_for_provider 字段
       en_US: Yidun SecretId
       zh_Hans: 易盾内容安全检测SecretId
     placeholder:
-      en_US: Please input your YiduncontentSecurity SecretId
+      en_US: Please input your yidun content security SecretId
       zh_Hans: 请输入你的易盾内容安全检测SecretId
     help:
-      en_US: Get your YiduncontentSecurity SecretId from yidun
+      en_US: Get your yidun content security SecretId from yidun
       zh_Hans: 从易盾官网获取您的SecretId
-    url: https://dun.163.com/product/text-detection
+    url: https://support.dun.163.com/documents/359794278577393664?docId=1096156073202741248
   yidun_secret_key:
     type: secret-input
     required: true
@@ -29,12 +29,12 @@ credentials_for_provider: #添加 credentials_for_provider 字段
       en_US: Yidun SecretKey
       zh_Hans: 易盾内容安全检测SecretKey
     placeholder:
-      en_US: Please input your YiduncontentSecurity SecretKey
+      en_US: Please input your yidun content security SecretKey
       zh_Hans: 请输入你的易盾内容安全检测SecretKey
     help:
-      en_US: Get your YiduncontentSecurity SecretKey from yidun
+      en_US: Get your yidun content security SecretKey from yidun
       zh_Hans: 从易盾官网获取您的SecretKey
-    url: https://dun.163.com/product/text-detection
+    url: https://support.dun.163.com/documents/359794278577393664?docId=1096156073202741248
   yidun_text_business_id:
     type: secret-input
     required: false
@@ -42,12 +42,12 @@ credentials_for_provider: #添加 credentials_for_provider 字段
       en_US: Yidun BusinessId
       zh_Hans: 易盾内容安全文本数据检测BusinessId
     placeholder:
-      en_US: Please input your YiduncontentSecurity BusinessId
+      en_US: Please input your yidun content security BusinessId
       zh_Hans: 请输入你的易盾内容安全文本数据检测BusinessId
     help:
-      en_US: Get your YiduncontentSecurity BusinessId from yidun
+      en_US: Get your yidun content security BusinessId from yidun
       zh_Hans: 从易盾官网获取您的文本BusinessId
-    url: https://dun.163.com/product/text-detection
+    url: https://support.dun.163.com/documents/359794278577393664?docId=1096156073202741248
   yidun_image_business_id:
     type: secret-input
     required: false
@@ -55,12 +55,12 @@ credentials_for_provider: #添加 credentials_for_provider 字段
       en_US: Yidun BusinessId
       zh_Hans: 易盾内容安全图片数据检测BusinessId
     placeholder:
-      en_US: Please input your YiduncontentSecurity BusinessId
+      en_US: Please input your yidun content security BusinessId
       zh_Hans: 请输入你的易盾内容安全图片数据检测BusinessId
     help:
-      en_US: Get your YiduncontentSecurity BusinessId from yidun
+      en_US: Get your yidun content security BusinessId from yidun
       zh_Hans: 从易盾官网获取您的图片BusinessId
-    url: https://dun.163.com/product/text-detection
+    url: https://support.dun.163.com/documents/359794278577393664?docId=1096156073202741248
 tools:
   - tools/yidun-text-security.yaml
   - tools/yidun-image-security.yaml

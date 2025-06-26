@@ -8,10 +8,10 @@ label:
   zh_Hans: 易盾内容安全检测
   pt_BR: yidun content security check
 description:
-  en_US: 易盾内容安全检测
-  ja_JP: 易盾内容安全检测
-  zh_Hans: 易盾内容安全检测
-  pt_BR: 易盾内容安全检测
+  en_US: Yidun content detection tool can conduct content security detection on input texts/images to ensure content compliance and avoid risks of content violations.
+  ja_JP: Yidun content detection tool can conduct content security detection on input texts/images to ensure content compliance and avoid risks of content violations.
+  zh_Hans: 易盾内容检测组件可针对输入文本/图片进行内容安全检测，保障内容合规，规避内容违规风险。
+  pt_BR: Yidun content detection tool can conduct content security detection on input texts/images to ensure content compliance and avoid risks of content violations.
 icon: yidun.png
 resource:
   memory: 268435456
